@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="content-language" content="en" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+		<title>Custom styled HTML 5 audio player</title>
+
+		<link rel="stylesheet" href="css/screen.css" />
+	</head>
+
+	<body>
+		<main class="container">
+			<div class="audio-player">
+				<audio id="sample" src="media/sample.mp3"></audio>
+
+				<div class="image"></div>
+
+				<a href="#" class="audio-button">
+					<svg viewBox="0 0 100 100">
+						<polygon fill="#FFF" points="30,25 78.9,50.5 78.9,50.5 30,75">
+							<animate class="to-pause1" begin="indefinite" fill="freeze" attributeName="points" dur="400ms" to="34.50,25 46.90,25 46.90,75 34.50,75" />
+							<animate class="to-play1" begin="indefinite" fill="freeze" attributeName="points" dur="400ms" to="30,25 78.9,50.5 78.9,50.5 30,75" />
+						</polygon>
+						<polygon fill="#FFF" points="30,25 78.9,50.5 78.9,50.5 30,75">
+							<animate class="to-pause2" begin="indefinite" fill="freeze" attributeName="points" dur="400ms" to="53.1,25 65.5,25 65.5,75 53.1,75" />
+							<animate class="to-play2" begin="indefinite" fill="freeze" attributeName="points" dur="400ms" to="30,25 78.9,50.5 78.9,50.5 30,75" />
+						</polygon>
+					</svg>
+				</a>
+
+				<div class="timeline-wrapper">
+					<div class="current-time">00:00:00</div>
+					<div class="timeline">
+						<div class="playhead"></div>
+					</div>
+					<div class="total-time">00:00:00</div>
+				</div>
+			</main>
+
+		<footer class="container">
+			<small>Audio from <a href="https://file-examples.com/index.php/sample-audio-files/sample-mp3-download/" target="_blank">file-examples.com</a>, photo by <a href="https://unsplash.com/photos/5gn2soeAc40" target="_blank">Adrian Korte</a></small>
+		</footer>
+
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
